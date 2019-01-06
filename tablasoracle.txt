@@ -1,0 +1,70 @@
+create table CLIENTE
+(
+  ID       VARCHAR2(100) not null
+    primary key,
+  CLIENT   VARCHAR2(100) not null,
+  TIENDA   VARCHAR2(100) not null,
+  EMAIL    VARCHAR2(100) not null,
+  TELEFONO VARCHAR2(100) not null,
+  FECHA    TIMESTAMP(6)
+)
+
+
+create table EMPLOYEE
+(
+  ID    VARCHAR2(255) not null
+    primary key,
+  NAMA  VARCHAR2(150) not null,
+  EMAIL VARCHAR2(255) not null
+    unique
+)
+/
+
+create table S_ROLES
+(
+  ID   VARCHAR2(40)  not null
+    primary key,
+  NAMA VARCHAR2(100) not null
+)
+/
+
+create table S_USER_ROLE
+(
+  ID_USER VARCHAR2(40) not null,
+  ID_ROLE VARCHAR2(40) not null
+)
+/
+
+
+
+
+create table S_USERS
+(
+  ID       VARCHAR2(40)  not null
+    primary key,
+  USERNAME VARCHAR2(40)  not null,
+  PASSWORD VARCHAR2(100) not null,
+  ACTIVE   NUMBER(1)     not null
+)
+/
+
+
+create table S_USERS
+(
+  ID       VARCHAR2(40)  not null
+    primary key,
+  USERNAME VARCHAR2(40)  not null,
+  PASSWORD VARCHAR2(100) not null,
+  ACTIVE   NUMBER(1)     not null
+)
+/
+
+create table S_USERS
+(
+  ID       VARCHAR2(40)  not null
+    primary key,
+  USERNAME VARCHAR2(40)  not null,
+  PASSWORD VARCHAR2(100) not null,
+  ACTIVE   NUMBER(1)     not null
+)
+/
